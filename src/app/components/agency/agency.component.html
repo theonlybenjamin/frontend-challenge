@@ -1,0 +1,14 @@
+<section class="agency" [routerLink]="['/agencia', agency.distrito]" >
+    <figure class="agency__icon">
+        <i [ngClass]="iconClass"></i>
+    </figure>
+    <section class="content">
+        <h4 class="content__name">{{ agency.agencia }}</h4>
+        <p class="content__department">{{ agency.departamento }}</p>
+        <p class="content__address">{{ agency.direccion }}</p>
+    </section>
+    <section class="agency__star">
+        <i class="fa fa-star-o"></i>
+    </section>
+</section>
+<hr>

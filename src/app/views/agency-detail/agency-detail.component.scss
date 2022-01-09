@@ -1,0 +1,22 @@
+.go-back {
+    margin: 40px 80px;
+    cursor: pointer;
+    color: #ff7800;
+}
+.form {
+    padding: 0px 140px;
+    & .form-group {
+        margin: 20px 0px;
+        & #district, #departament, #province {
+            pointer-events: none;
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    .form {
+        padding: 0px 30px;
+    }
+    .go-back {
+        margin: 30px 30px;
+    }
+}

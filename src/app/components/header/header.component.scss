@@ -1,0 +1,27 @@
+.nav-header {
+    background: #002A8D;
+    color: #fff;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 18px 5px 80px;
+    &__title {
+        p {
+            font-size: 22px;
+            display: inline;
+        }
+    }
+    &__options {
+        // list-style: none;
+        display: inline;
+        padding: 0;
+    }
+    &__link {
+        display: inline-block;
+        margin: 0 12px;
+        .fa {
+            font-size: 20px;
+        }
+    }
+}

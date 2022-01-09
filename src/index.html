@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>FrontChallenge</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    .loading {
+      opacity: 0;
+      transition: opacity .8s ease-in-out;
+      position: fixed;
+      height: 100vh;
+      width: 100vw;
+      top: 0;
+      left: 0;
+      background: #fff;
+      z-index: -1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .loading img {
+        width: 250px;
+        height: 80px;
+    }
+    .loading {
+      opacity: 1;
+      z-index: 100;
+  }
+    </style>
+</head>
+<body>
+  <app-root>
+    <div class="loading">
+      <img src="/assets/img/bcp-logo.png" alt="Logo bcp">
+    </div>
+  </app-root>
+</body>
+</html>

@@ -1,0 +1,9 @@
+.floating__button {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 93%;
+    left: 93%;
+    z-index: 10000;
+    background-color:#ff7800;
+    border-color: #ff7800;
+}

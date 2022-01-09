@@ -1,0 +1,32 @@
+.agency {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 110px;
+    &__icon {
+        font-size: 30px;
+    }
+    & .content {
+        min-width: 300px;
+        h4, p {
+            margin: 0;
+            max-width: 300px;
+        }
+        &__address {
+            color: #A2A2A2;
+        }
+    }
+    &__star {
+        .fa.fa-star-o {
+            font-size: 26px;
+            color: #A2A2A2;
+            &:hover{
+                color: #ff7800;
+            }
+        }
+    }
+    @media screen and (max-width: 768px){
+          padding: 0px 30px;
+    }
+}
