@@ -14,6 +14,7 @@ export class AgencyListComponent implements OnInit {
 
   constructor(private facade: AgenciesFacade) {
     this.facade.getAgencies().subscribe((x) => {
+      console.log(x);
       this.agencies = x;
     });
   }

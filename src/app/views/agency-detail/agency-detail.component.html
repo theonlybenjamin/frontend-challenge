@@ -54,3 +54,17 @@
     </div>
     <button type="submit" class="btn btn-primary mt-4" (click)="updateAgency()">Actualizar</button>
   </form>
+  <div class="form-group pt-5 mx-5">
+    <agm-map 
+        [latitude]="agencyForm.get('lat').value"
+        [longitude]="agencyForm.get('lon').value"
+        [disableDefaultUI]="false"
+        [zoom]="zoom">
+        <agm-marker 
+            [markerDraggable]="true"
+            [latitude]="lat" 
+            [longitude]="lon"
+            (dragEnd)="markerDragEnd($event.coords)">
+        </agm-marker>
+    </agm-map>
+  </div>

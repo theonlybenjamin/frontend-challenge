@@ -13,6 +13,9 @@ export class AgencyDetailComponent {
 
   public agency: IAgencyResponse;
   public agencyForm: FormGroup;
+  public lat: number;
+  public lon: number;
+  public zoom = 1;
   constructor(
     private route: ActivatedRoute,
     private router: Router,
@@ -28,6 +31,8 @@ export class AgencyDetailComponent {
       lat: new FormControl(this.agency.lat, Validators.required),
       lon: new FormControl(this.agency.lon, Validators.required)
   });
+  this.lat = this.agency.lat;
+  this.lon = this.agency.lon;
   }
 
   public updateAgency() {
@@ -36,4 +41,10 @@ export class AgencyDetailComponent {
       this.router.navigate(['/agencias']);
     }
   }
+
+  markerDragEnd({lat, lng}: {lat: number, lng: number}): void {
+    this.agencyForm.get('lat').setValue(lat);
+    this.agencyForm.get('lon').setValue(lng);
+}
+
 }
