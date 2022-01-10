@@ -1,1 +1,1 @@
-En caso tener problemas ejecutando solo con ng serve, ejecutar npm run start
+ejecutar npm run start
