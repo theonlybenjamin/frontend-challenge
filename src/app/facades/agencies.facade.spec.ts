@@ -7,19 +7,6 @@ describe('AgenciesService', () => {
     let service: AgenciesService;
     let http: HttpTestingController;
 
-    const agencies = [
-        {
-            address: 'Las Flores de Primavera 1487',
-            code: 'A0',
-            department: 'Lima',
-            district: 'San Juan De Lurigancho',
-            latitude: -77.01232817,
-            longitude: -12.0046896,
-            name: 'Las Flores',
-            province: 'Lima'
-        }
-    ];
-
     beforeEach(() =>
         TestBed.configureTestingModule({
             imports: [HttpClientTestingModule],
